@@ -1,7 +1,7 @@
 # kali-i3-compton
 
-I3 Window Manager installer for Kali-Linux 2021.1
-Also used: Compton, Alacritty, rofi, and some nerd fonts
+i3-gaps installer for Kali-Linux 2021.1
+Also used: compton, alacritty, rofi, and some nerd fonts
 
 > Just run this in a folder where you have read/write permission
 
