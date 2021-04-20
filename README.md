@@ -10,4 +10,4 @@ Also used: compton, alacritty, rofi, and some nerd fonts.
 ```
 
 > To add wallpapers, move the files in ~/.wallpaper folder.
-> If youre username is not kali you might have to change that in the ~/.fehbg file.
+> If your username is not kali you might have to change that in the ~/.fehbg file.
