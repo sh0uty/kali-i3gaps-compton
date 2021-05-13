@@ -154,9 +154,6 @@ exec_always --no-startup-id sh ~/.fehbg
 # compton - Compositing Manager for Shadows and Opacity
 exec_always --no-startup-id compton -b --config ~/.config/compton/compton.conf
 
-# VM Clipboard Fix
-exec_always --no-startup-id ~/.config/i3/clipboard_fix.sh
-
 # Resize Bindings
 bindsym $mod+Ctrl+Shift+Right resize shrink width 10 px or 10 ppt
 bindsym $mod+Ctrl+Shift+Up resize grow height 10 px or 10 ppt

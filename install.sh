@@ -35,6 +35,5 @@ cp .config/i3/i3blocks.conf ~/.config/i3/i3blocks.conf
 cp .config/compton/compton.conf ~/.config/compton/compton.conf
 cp .config/rofi/config ~/.config/rofi/config
 cp .fehbg ~/.fehbg
-cp .config/i3/clipboard_fix.sh ~/.config/i3/clipboard_fix.sh
 
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
