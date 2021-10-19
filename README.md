@@ -1,6 +1,6 @@
 # kali-i3-compton
 
-i3-gaps installer for Kali-Linux 2021.1 VirtualBox.
+i3-gaps installer for Kali-Linux 2021.3 VirtualBox.
 Also used: compton, alacritty, rofi, and some nerd fonts.
 
 > Just run this in a folder where you have read/write permission.
@@ -11,3 +11,5 @@ Also used: compton, alacritty, rofi, and some nerd fonts.
 
 > To add wallpapers, move the files in ~/.wallpaper folder.
 > If your username is not kali you might have to change that in the ~/.fehbg file.
+
+Also make sure to have enough RAM, otherwise alacritty compilation might fail
