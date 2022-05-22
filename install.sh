@@ -23,17 +23,26 @@ ninja
 sudo ninja install
 cd ../..
 
+git clone https://github.com/tryone144/picom.git
+cd picom
+git checkout feature/dual_kawase
+sudo meson --buildtype=release . build
+sudo ninja -C build install
+cd ../
+
 pip3 install pywal
 
 mkdir -p ~/.config/i3
 mkdir -p ~/.config/compton
 mkdir -p ~/.config/rofi
 mkdir -p ~/.config/alacritty
+mkdir -p ~/.config/picom
 cp .config/i3/config ~/.config/i3/config
 cp .config/alacritty/alacritty.yml ~/.config/alacritty/alacritty.yml
 cp .config/i3/i3blocks.conf ~/.config/i3/i3blocks.conf
 cp .config/compton/compton.conf ~/.config/compton/compton.conf
 cp .config/rofi/config ~/.config/rofi/config
+cp .config/picom/picom.conf ~./config/picom/picom.conf
 cp .fehbg ~/.fehbg
 
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
