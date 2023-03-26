@@ -152,7 +152,7 @@ default_border normal
 exec_always --no-startup-id sh ~/.fehbg
 
 # compton - Compositing Manager for Shadows and Opacity
-exec_always --no-startup-id compton -b --config ~/.config/compton/compton.conf
+exec_always --no-startup-id /usr/local/bin/picom -b --config ~/.config/picom/picom.conf --experimental-backends
 
 # Resize Bindings
 bindsym $mod+Ctrl+Shift+Right resize shrink width 10 px or 10 ppt
