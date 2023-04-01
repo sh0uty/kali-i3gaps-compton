@@ -151,8 +151,7 @@ default_border normal
 # feh - Wallpaper Setter
 exec_always --no-startup-id sh ~/.fehbg
 
-exec_always --no-startup-id killall -q polybar
-exec_always --no-startup-id polybar -c ~/.config/polybar/config.ini
+exec_always --no-startup-id sh ~/.config/polybar/launch.sh
 
 # compton - Compositing Manager for Shadows and Opacity
 exec_always --no-startup-id /usr/local/bin/picom -b --config ~/.config/picom/picom.conf --experimental-backends
