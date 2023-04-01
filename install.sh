@@ -38,6 +38,7 @@ mkdir -p ~/.config/rofi
 mkdir -p ~/.config/alacritty
 mkdir -p ~/.config/picom
 mkdir -p ~/.config/nvim
+
 cp .config/i3/config ~/.config/i3/config
 cp .config/alacritty/alacritty.yml ~/.config/alacritty/alacritty.yml
 cp .config/i3/i3blocks.conf ~/.config/i3/i3blocks.conf
@@ -46,5 +47,7 @@ cp .config/rofi/config ~/.config/rofi/config
 cp .config/picom/picom.conf ~/.config/picom/picom.conf
 cp .config/nvim/init.vim ~/.config/nvim/init.vim
 cp .fehbg ~/.fehbg
+cp -r .config/polybar ~/.config/
+
 
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"

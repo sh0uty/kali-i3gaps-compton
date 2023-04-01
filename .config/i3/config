@@ -123,19 +123,19 @@ mode "resize" {
 bindsym $mod+r mode "resize"
 
 # i3bar with i3blocks
-bar {
-    status_command i3blocks -c ~/.config/i3/i3blocks.conf
-        i3bar_command i3bar -t
-        position top
-        height 26
-        font pango:RobotoMono Nerd Font Regular 7.5
-        colors {
-            statusline #EEEEEE
-            background #1C1D2B88
-            focused_workspace #282A3E88 #282A3E88 #FFFFFF
-            statusline #E6FFF5
-        }
-}
+# bar {
+#    status_command i3blocks -c ~/.config/i3/i3blocks.conf
+#        i3bar_command i3bar -t
+#        position top
+#        height 26
+#        font pango:RobotoMono Nerd Font Medium 7.5
+#        colors {
+#            statusline #EEEEEE
+#            background #1C1D2B88
+#            focused_workspace #282A3E88 #282A3E88 #FFFFFF
+#            statusline #E6FFF5
+#        }
+#}
 
 # i3-gaps
 for_window [class="^.*"] border pixel 2
@@ -150,6 +150,9 @@ default_border normal
 
 # feh - Wallpaper Setter
 exec_always --no-startup-id sh ~/.fehbg
+
+exec_always --no-startup-id killall -q polybar
+exec_always --no-startup-id polybar -c ~/.config/polybar/config.ini
 
 # compton - Compositing Manager for Shadows and Opacity
 exec_always --no-startup-id /usr/local/bin/picom -b --config ~/.config/picom/picom.conf --experimental-backends
